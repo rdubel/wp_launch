@@ -18,15 +18,24 @@
         <form method="post">
             <input type="text" name="name" placeholder="votre nom">
             <input type="mail" name="mail" placeholder="Votre email">
+            <label for="mailformat">Format des mails :</label>
+            <select id="mailformat" name="mailformat">
+                <option value="html">HTML</option>
+                <option value="text">Text</option>
+            </select>
             <button type="submit">Ok</button>
         </form>
         <?php
-            if(isset($_POST['mail']) && isset($_POST['name'])) {
+            if(isset($_POST['mail'], $_POST['name'], $_POST['mailformat'])) {
+
+                $html = ($_POST['mailformat'] == 'html') ? 1 : 0;
 
                 $query = $wpdb->insert( 'mails', array(
                     'mail' => $_POST['mail'],
                     'name' => $_POST['name'],
+                    'html_mail' => $html
                 ));
+
                 if ($query) {
                     echo "<p>Thank you, the mail " . $_POST['mail'] . " has been registered</p>";
                 } else {

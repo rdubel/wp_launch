@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<main>
 
+<main>
     <article class="">
         <?php
             $posts = get_posts( array(
@@ -14,10 +14,10 @@
         ?>
     </article>
     <section>
-        <h4>Newsletter</h4>
+        <h4>Soyez averti dès la sortie :</h4>
         <form method="post">
-            <input type="mail" name="mail" placeholder="enter your email">
-            <button type="submit">ok</button>
+            <input type="mail" name="mail" placeholder="Votre email">
+            <button type="submit">Ok</button>
         </form>
         <?php
             if(isset($_POST['mail'])){
@@ -28,7 +28,6 @@
             }
         ?>
     </section>
-
-
-    <?php get_footer(); ?>
 </main>
+
+<?php get_footer(); ?>

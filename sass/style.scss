@@ -1,12 +1,18 @@
 body {
     background-color: rgb(238, 209, 174);
+
     main {
-        article {
-            height: 50%;
-            width: 70%;
-            border: 1px solid grey;
-            margin: 22em auto;
-            padding: .3em;
+        margin: 18em auto;
+        height: 50%;
+        width: 70%;
+        padding: .5em;
+        border: 1px solid grey;
+        text-align: center;
+
+        section {
+            h4 {
+                margin-bottom: .5em;
+            }
         }
     }
 }

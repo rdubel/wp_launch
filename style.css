@@ -1,10 +1,13 @@
 body {
   background-color: #eed1ae; }
-  body main article {
+  body main {
+    margin: 18em auto;
     height: 50%;
     width: 70%;
+    padding: .5em;
     border: 1px solid grey;
-    margin: 22em auto;
-    padding: .3em; }
+    text-align: center; }
+    body main section h4 {
+      margin-bottom: .5em; }
 
 /*# sourceMappingURL=style.css.map */

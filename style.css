@@ -1,13 +1,9 @@
-/*
-Theme Name: Product launch page
-Author: Legendary trio of enlightenment
-Author URI: www.lel.com
-Description: ...
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: CV2
-Tags: my, friggin, theme
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+body {
+  background-color: #eed1ae; }
+  body main article {
+    height: 50%;
+    width: 70%;
+    border: 1px solid grey;
+    margin: 22em auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -26,7 +26,7 @@
             <button type="submit">Ok</button>
         </form>
         <?php
-            if(isset($_POST['mail'], $_POST['name'], $_POST['mailformat'])) {
+            if(isset($_POST['mail'], $_POST['name'], $_POST['mailformat']) && $_POST['mail'] != '' && $_POST['name'] != '') {
 
                 $html = ($_POST['mailformat'] == 'html') ? 1 : 0;
 

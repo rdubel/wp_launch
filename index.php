@@ -6,11 +6,11 @@
             $posts = get_posts( array(
                 'category' => 2
             ));
-            foreach ($posts as $post) {
-                echo '<h1>'.$post->post_title.'</h1>';
-                echo '<p>'.$post->post_content.'</p>';
-                echo '<p>'.get_post_custom_values('release_date', $post->ID)[0].'</p>';
-            }
+            $post = $posts[0];
+            echo '<h1>'.$post->post_title.'</h1>';
+            echo get_the_post_thumbnail($post->ID);
+            echo '<p>'.$post->post_content.'</p>';
+            echo '<p>'.get_post_custom_values('release_date', $post->ID)[0].'</p>';
         ?>
     </article>
     <section>
@@ -37,9 +37,9 @@
                 ));
 
                 if ($query) {
-                    echo "<p>Thank you, the mail " . $_POST['mail'] . " has been registered</p>";
+                    echo '<p>'.get_post_custom_values('success_message', $post->ID)[0].'</p>';
                 } else {
-                    echo "<p>An error has occured, please try again</p>";
+                    echo '<p>'.get_post_custom_values('error_message', $post->ID)[0].'</p>';
                 }
 
             }

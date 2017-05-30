@@ -4,6 +4,7 @@ body {
     height: 50%;
     width: 70%;
     border: 1px solid grey;
-    margin: 22em auto; }
+    margin: 22em auto;
+    padding: .3em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,22 @@
             }
         ?>
     </article>
+    <section>
+        <h4>Newsletter</h4>
+        <form method="post">
+            <input type="mail" name="mail" placeholder="enter your email">
+            <button type="submit">ok</button>
+        </form>
+        <?php
+            if(isset($_POST['mail'])){
+                $_POST['mail'];
+                $wpdb->insert( 'mails', array(
+                    'mail' => $_POST['mail'],
+                ));
+            }
+        ?>
+    </section>
+
 
     <?php get_footer(); ?>
 </main>

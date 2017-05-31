@@ -17,7 +17,7 @@
         <h4>Soyez averti dès la sortie :</h4>
         <form method="post">
             <input type="text" name="name" placeholder="votre nom">
-            <input type="mail" name="mail" placeholder="Votre email">
+            <input type="email" name="mail" placeholder="Votre email">
             <label for="mailformat">Format des mails :</label>
             <select id="mailformat" name="mailformat">
                 <option value="html">HTML</option>
